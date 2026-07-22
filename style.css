@@ -19,7 +19,8 @@ body{
     min-height:50px;
     width: 100px;
     background-color:bisque;
-    font-size: 20pt;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
     
@@ -40,6 +41,7 @@ body{
     background-color:darkcyan;
     font-size: 40pt;
     aspect-ratio: 4 / 3;
+    position: relative;
     
 }
 .works img { /*adding the img reference means this class will apply to images inside the .works class*/
@@ -49,6 +51,10 @@ body{
     display: block;
 }
 
+.works a {
+    display: block;
+    height: 100%;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -59,18 +65,20 @@ body{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #c7c7c7;
 }
 
 .works:hover .overlay {
-    opacity: .5
+    opacity: .75;
 }
 .text {
-  color: white;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  opacity: 1;
 }
